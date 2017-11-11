@@ -24,8 +24,8 @@ body, html {
 
 #title-parallax{
     background-image: url(images/parallax.jpg);
-    height: 100%;
-    width: 105%;
+    height: 100vh;
+    width: 100vw;
 /*    POSITIONING*/
     z-index: -1;
     position: absolute;
@@ -39,8 +39,10 @@ body, html {
 }
 
 #title-page{
-    height: auto;
-    width: 100%;    
+    height:100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #chris-headshot {
@@ -49,6 +51,9 @@ body, html {
     max-height: 25em;
     margin-top: 7em;
     margin-bottom: 3em;
+    max-width: 50%;
+    margin:auto;
+    display: block;
 }
 
 .header-text {
@@ -65,11 +70,12 @@ body, html {
 
                         /*TECH PAGE*/
 #tech-page{
-    min-height: 100%;
+    min-height: 50%;
     border-bottom: thick solid black;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    padding-bottom: 5em;
 }
 
 #tech-title{
@@ -77,10 +83,11 @@ body, html {
 }
 
 .card-row-container{
-    height: 45%;
+    height: 60%;
     width: 100%;
 /*    background-color: aqua;*/
-    margin-bottom: 2em;
+    display: flex;
+    flex-direction: row;
 }
 
 .card{
@@ -90,6 +97,7 @@ body, html {
     box-shadow: 0px 8px 10px #888888;
     vertical-align: middle;
     border-radius: 5%;
+    border: thin solid black;
     animation-delay: 1s;
 }
 
@@ -99,6 +107,30 @@ body, html {
     vertical-align: middle;
 }
 
+/*
+#html-card{
+    background: #fff886;
+    background: -webkit-linear-gradient(bottom right,#fff886,#dd6161);
+    background: -moz-linear-gradient(bottom right,#fff886,#dd6161);
+    background: linear-gradient(bottom right,#fff886,#dd6161);        
+}
+
+#css-card{
+    background: #5efce8;
+    background: -webkit-linear-gradient(bottom,#5efce8,#736efe);
+    background: -moz-linear-gradient(bottom,#5efce8,#736efe);
+    background: linear-gradient(bottom,#5efce8,#736efe);
+            
+}
+
+#bs-card{
+    background: #312a6c;
+    background: -webkit-linear-gradient(top left,#312a6c,#852d91);
+    background: -moz-linear-gradient(top left,#312a6c,#852d91);
+    background: linear-gradient(top left,#312a6c,#852d91);
+            
+}
+*/
                         /*PERSONAL PAGE*/
 
 #personal-page{
