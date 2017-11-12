@@ -75,6 +75,7 @@ body, html {
     display: flex;
     flex-direction: column;
     padding-bottom: 5em;
+    margin-bottom: 3em;
 }
 
 #tech-title{
@@ -106,32 +107,36 @@ body, html {
     vertical-align: middle;
 }
 
-/*
-#html-card{
-    background: #fff886;
-    background: -webkit-linear-gradient(bottom right,#fff886,#dd6161);
-    background: -moz-linear-gradient(bottom right,#fff886,#dd6161);
-    background: linear-gradient(bottom right,#fff886,#dd6161);        
-}
-
-#css-card{
-    background: #5efce8;
-    background: -webkit-linear-gradient(bottom,#5efce8,#736efe);
-    background: -moz-linear-gradient(bottom,#5efce8,#736efe);
-    background: linear-gradient(bottom,#5efce8,#736efe);
-            
-}
-
-#bs-card{
-    background: #312a6c;
-    background: -webkit-linear-gradient(top left,#312a6c,#852d91);
-    background: -moz-linear-gradient(top left,#312a6c,#852d91);
-    background: linear-gradient(top left,#312a6c,#852d91);
-            
-}
-*/
                         /*PERSONAL PAGE*/
 
 #personal-page{
+    margin-top: 2em;
+    min-height: 50%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
 
+#personal-title-container{
+    border-bottom: thick solid red;
+}
+
+.flip-card-row-container{
+    height: 60%;
+    width: 100%;
+/*    background-color: aqua;*/
+    display: flex;
+    flex-direction: row;
+}
+
+.flip-card{
+    width: 90%;
+    height: 80%;
+/*    background-color: black;*/
+    box-shadow: 0px 8px 10px #888888;
+    vertical-align: middle;
+/*    border-radius: 5%;*/
+    border: thin solid black;
+    animation-delay: 1s;
 }
