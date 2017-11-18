@@ -44,18 +44,17 @@ body, html {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    margin-top: 10rem;
+    justify-content: center;
 }
 
 #chris-headshot {
     border-radius: 50%;
-    max-height: 25em;
+    max-height: 30em;
     margin-top: 20rem;
     margin-bottom: 3em;
     max-width: 50%;
     margin:auto;
     display: block;
-    flex: 2;
 }
 
 .header-text {
@@ -68,6 +67,7 @@ body, html {
     color: white;
     text-shadow: 3px 3px 2px black;
     margin-bottom: 2em;
+
 }
 
                         /*TECH PAGE*/
@@ -78,12 +78,15 @@ body, html {
     display: flex;
     flex-direction: column;
     padding-bottom: 5em;
-/*    margin-bottom: 3em;*/
-    m
 }
 
 #tech-title{
     border-bottom: thick solid blue;
+    margin-bottom: 5rem;
+}
+
+#made-with-text{
+    margin-bottom: 2rem;
 }
 
 .card-row-container{
