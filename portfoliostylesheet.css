@@ -13,11 +13,12 @@ body, html {
                         /*TEXT*/
 
 .primary-text{
-    font-family: "Arvo";
+    font-family: "Fjalla One";
+    text-transform: uppercase;
 }
 
 .secondary-text{
-    font-family: "Raleway";
+    font-family: "Cantarell";
 }
 
 
@@ -94,6 +95,8 @@ body, html {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -113,6 +116,37 @@ body, html {
     vertical-align: middle;
 }
 
+.tech-con-row{
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+
+@media (max-width:800px){
+    .tech-con-row{
+        flex-direction: column;
+    }
+}
+
+.tech-panel{
+    max-width: 31rem;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    
+}
+
+.tech-panel img {
+    width: 10rem;
+    margin-bottom: 1rem;
+    box-shadow: 0px 8px 10px #888888;
+}
+
+.concepts-panel{
+    max-width: 31rem;
+    flex-grow: 1;
+    box-shadow: 0px 8px 10px #888888;
+}
+
                         /*PERSONAL PAGE*/
 
 #personal-page{
@@ -128,23 +162,6 @@ body, html {
     border-bottom: thick solid red;
 }
 
-.flip-card-row-container{
-    height: 60%;
-    width: 100%;
-    display: inline-block;
-    flex-direction: row;
-}
-
-.flip-card{
-    max-width: 100%;
-    min-height: 18rem;
-    flex-grow: 1;
-    box-shadow: 0px 8px 10px #888888;
-    vertical-align: middle;
-    border-radius: 0;
-    margin-left: auto;
-    position: relative;
-}
 
 .flip-card-img {
     height: 100%;
@@ -154,52 +171,44 @@ body, html {
     z-index: 1;
 }
 
-.card-title{
-    position: absolute;
-    width: 50%;
-    height 25%;
-    left: 25%;
-    top: 45%;
-    z-index: 2;
-    background-color: rgba(255,255,255,0.4);
-    text-shadow: 3px 3px 2px black; 
-    color: white;
-    border: thin solid white;
-    padding: 0.3em;
+.about-me-row{
+    display: flex;
+    box-shadow: 0px 8px 10px #888888;
+    margin-bottom: 1rem;
+    background-color: floralwhite;
 }
 
-
-.card-title h2 {
-    font-size: 1.5em;
+@media (max-width: 800px){
+    .about-me-row{
+        flex-direction: column;
+    }
 }
 
-.flip-card:hover, .flip-container.hover {
-    transform: rotateY(180deg);
-    transition: 0.7s linear;
-	transform-style: preserve-3d;
-	}
-
-.face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-
-.front {
-    height: 100%;
-    width: 100%;
-    z-index: 2;
-}
-
-.face.back {
-    transform: rotateY(180deg);
-    color: white;
+.info-panel{
+    flex-grow:3;
+    height: 20rem;
     text-align: center;
-    background: #304352;
-    background: -webkit-linear-gradient(bottom right,#304352,#162851);
-    background: -moz-linear-gradient(bottom right,#304352,#162851);
-    background: linear-gradient(bottom right,#304352,#162851);           
+    padding: 1rem;
+}
+
+.pic-panel{
+    background-color: aqua;
+    height: 20rem;
+}
+
+.pic-panel img{
+    flex-shrink: 1;
+    object-fit: cover;
+}
+
+#climbing-section {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 800px){
+    #climbing-section{
+        flex-direction: column;
+    }
 }
 
 
