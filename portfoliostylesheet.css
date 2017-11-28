@@ -74,7 +74,7 @@ body, html {
                         /*TECH PAGE*/
 #tech-page{
     min-height: 50%;
-    border-bottom: thick solid black;
+    border-bottom: thin solid grey;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -130,25 +130,48 @@ body, html {
 
 .tech-panel{
     max-width: 31rem;
-    flex-grow: 1;
+    display: flex;
+    flex-shrink: 1;
     flex-wrap: wrap;
+    justify-content: space-between;
     
+}
+
+@media (max-width:800px){
+    .tech-panel{
+        justify-content: space-between;
+    }
 }
 
 .tech-panel img {
     width: 10rem;
+    height: 10rem;
     margin-bottom: 1rem;
     box-shadow: 0px 8px 10px #888888;
+}
+
+@media (max-width:800px){
+    .tech-panel img {
+        width: 40vw;
+    }
 }
 
 .concepts-panel{
     max-width: 31rem;
     flex-grow: 1;
     box-shadow: 0px 8px 10px #888888;
+    margin-left: 1rem;
+}
+
+@media (max-width:800px){
+    .concepts-panel{
+        margin-left: 0;
+    }
 }
 
                         /*PERSONAL PAGE*/
 
+/*
 #personal-page{
     margin-top: 2em;
     min-height: 50%;
@@ -212,3 +235,4 @@ body, html {
 }
 
 
+*/
