@@ -133,6 +133,7 @@ body, html {
     display: flex;
     align-self: center;
     flex-direction: column;
+    z-index: 2;
  }
 
 
@@ -147,6 +148,7 @@ body, html {
     font-size: 2rem;
     border-bottom: thin white solid;
     padding: 5px;
+    z-index: 1;
 }
 
  .drop-btn{
@@ -161,14 +163,11 @@ body, html {
 
  .drop-btn:hover{
     background-color: #80FFAE;
+    cursor: pointer;
  }
 
  .flip-btn{
     transform: rotate(180deg);
- }
-
- .active{
-     height: auto;
  }
 
  .fa-arrow-circle-down{
