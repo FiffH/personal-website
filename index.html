@@ -5,105 +5,75 @@
      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
      <script src="#"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
      <link rel="stylesheet" type="text/css" href="portfoliostylesheet.css">
-     <link href="https://fonts.googleapis.com/css?family=Cantarell|Fjalla+One" rel="stylesheet"> 
+     <link href="https://fonts.googleapis.com/css?family=Heebo:900|Work+Sans:200" rel="stylesheet"> 
     <title>Christopher Harris Front End Developer</title>
 </head>
-	<body class="bg-faded">
-        <div class="container-fluid" id="title-parallax">
-        </div>
-        <div class="container-fluid" id="title-page">
-            <div class="ml-auto mr-auto col-md-4 headshot">
-                <img src="images/chris-headshot.png" class="img-responsive" id="chris-headshot">
+	<body>
+        <div class="container-fluid" id="landing-page">
+            <div id="titles-container">
+                <h1 class="primary-text caps text-shadow" id="landing-page-title">Chris Harris</h1>
+                <h3 class="secondary-text text-shadow" id="landing-page-subtitle">Graduate Front End Developer</h3>
             </div>
-            <h1 class=" text-center header-text primary-text">Christopher Harris</h1>
-            <h3 class="text-center subheader-text secondary-text">Computer Science Graduate - Front End Developer</h3>
+        </div>
+
+        <div class="container" id="skills-page">
+            <div class="container" id="skills-title-container">
+                <h1 class="primary-text caps">KNOWLEDGE</h1>
+            </div>
+            <div class="container" id="skills-group-container">
+                <div class="skills-box box-shadow" id="languages-box">
+                    <div class="skills-subtitle">
+                        <h4 class="primary-text caps text-shadow">Languages</h4>
+                    </div>
+                    <div class="skills-content" id="languages-content">
+                        <h1 class="secondary-text item languages-item">HTML5</h1>
+                        <h1 class="secondary-text item languages-item">CSS3</h1>
+                        <h1 class="secondary-text item languages-item">Javascript</h1>
+                        <h1 class="secondary-text item languages-item">JAVA</h1>
+                        <h1 class="secondary-text item languages-item">SQL/MySQL</h1>
+                    </div>
+                    <div class="drop-btn" id="languages-drop-btn"><i class="fa fa-arrow-circle-down fa-2x"></i></div>
+                </div>
+                <div class="skills-box box-shadow" id="concepts-box">
+                    <div class="skills-subtitle">
+                        <h4 class="primary-text caps text-shadow">Concepts/Practices</h4>
+                    </div>
+                    <div class="skills-content" id="concepts-content">
+                        <h1 class="secondary-text item languages-item">Responsive Design</h1>
+                        <h1 class="secondary-text item languages-item">Object Oriented Programming</h1>
+                        <h1 class="secondary-text item languages-item">Test Driven Development</h1>
+                        <h1 class="secondary-text item languages-item">Agile Development</h1>
+                        <h1 class="secondary-text item languages-item">Scrum</h1>
+                        <h1 class="secondary-text item languages-item">Version Control Systems</h1>
+                    </div>
+                    <div class="drop-btn" id="concepts-drop-btn"><i class="fa fa-arrow-circle-down fa-2x"></i></div>
+                </div>
+                <div class="skills-box box-shadow" id="frameworks-box">
+                    <div class="skills-subtitle">
+                        <h4 class="primary-text caps text-shadow">Frameworks</h4>
+                    </div>
+                    <div class="skills-content" id="frameworks-content">
+                        <h1 class="secondary-text item languages-item">JQuery</h1>
+                        <h1 class="secondary-text item languages-item">Sass</h1>
+                    </div>
+                    <div class="drop-btn" id="concepts-drop-btn"><i class="fa fa-arrow-circle-down fa-2x"></i></div>
+                </div>
+                <div class="skills-box box-shadow" id="tech-box">
+                    <div class="skills-subtitle">
+                        <h4 class="primary-text caps text-shadow">Technologies</h4>
+                    </div>
+                    <div class="skills-content" id="tech-content">
+                        <h1 class="secondary-text item languages-item">GitHub</h1>
+                        <h1 class="secondary-text item languages-item">Photoshop</h1>
+                    </div>
+                    <div class="drop-btn" id="tech-drop-btn"><i class="fa fa-arrow-circle-down fa-2x"></i></div>
+                </div>
+            </div>
             
         </div>
-        
-        
-        
-        <div class="container-fluid bg-faded my-3" id="tech-page">
-            <div class="ml-auto mr-auto col-md-6 text-center" id="tech-title">
-                <h1 class="primary-text text-center">Christopher Harris - The Developer</h1>
-            </div>
-            <h3 class="secondary-text text-center" id="made-with-text">This website was made using: </h3>
-                <div class="container-fluid row card-row">
-                    <div class="card animated fadeInUp" id="html-card">
-                        <img src="images/html-icon.png" class="img-responsive mb-auto" id="html-icon">
-                        <h2 class="primary-text text-center mt-auto">HTML5</h2>
-                    </div>
-                    <div class="card animated fadeInUp" id="css-card">
-                        <img src="images/css-icon.png" class="img-responsive" id="css-icon">
-                        <h2 class="primary-text text-center mt-auto">CSS3</h2>
-                    </div>
-                    <div class="card animated fadeInUp" id="bs-card">
-                        <img src="images/jscript.png" class="img-responsive mt-auto" id="bootstrap-icon">
-                        <h2 class="primary-text text-center mt-auto">JavaScript</h2>
-                    </div>
-                    <div class="card animated fadeInUp" id="bs-card">
-                        <img src="images/bootstrap-icon.png" class="img-responsive mt-auto" id="bootstrap-icon">
-                        <h2 class="primary-text text-center mt-auto">Bootstrap</h2>
-                    </div>
-                </div>
-                <h3 class="secondary-text text-center">I also have technical experience with the following technologies and concepts</h3>
-                <div class="tech-con-row">
-                    <div class="tech-panel">
-                        <img src="images/java-icon.png">
-                        <img src="images/jquery.png">
-                        <img src="images/sass.png">
-                        <img src="images/github-icon.png">  
-                        <img src="images/mysql-icon.png">
-                        <img src="images/c-sharp.png">                          
-                    </div>
-                    <div class="concepts-panel">
-                        <h3 class="secondary-text text-center">Having studied at Royal Holloway University of London I have had exposure to a number of different programming concepts, this includes</h3>
-                        <ul class="concept-list secondary-text">
-                            <li>Responsive Design</li>
-                            <li>User Experience</li>
-                            <li>Object Oriented Programming(Java, C#)</li>
-                            <li>Test Driven Development</li>
-                            <li>Agile Development</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        
-        
-        
-<!--
-        <div class="container-fluid bg-faded" id="personal-page">
-            <div class="container-fluid" id="personal-title-container">
-                <h1 class="primary-text">Christopher Harris - The Person</h1>
-            </div>
-            <div class="about-me-row" id="guitar-section">
-                <div class="info-panel">
-                    <h1 class="primary-text">Guitar</h1>
-                    <h4 class="secondary-text text-center">something something something something something something guitar</h4>
-                </div>
-                <div class="pic-panel">
-                    <img src="https://lorempixel.com/output/nightlife-q-c-1000-610-6.jpg" class="img-responsive mt-auto flip-card-img" id="bootstrap-icon">
-                </div>
-            </div>
-            <div class="about-me-row" id="climbing-section">
-                <div class="info-panel">
-                    <h1 class="primary-text">Climbing</h1>
-                </div>
-                <div class="pic-panel">
-                    <img src="https://lorempixel.com/output/nightlife-q-c-1000-610-6.jpg" class="img-responsive mt-auto flip-card-img" id="bootstrap-icon">
-                </div>
-            </div>
-            <div class="about-me-row" id="technology-section">
-                <div class="info-panel">
-                    <h1 class="primary-text">Technology</h1>
-                </div>
-                <div class="pic-panel">
-                    <img src="https://lorempixel.com/output/nightlife-q-c-1000-610-6.jpg" class="img-responsive mt-auto flip-card-img" id="bootstrap-icon">
-                </div>
-            </div>
-        </div>
--->
 	</body>
 </html>
