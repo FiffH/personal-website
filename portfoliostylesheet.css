@@ -116,7 +116,7 @@ body, html {
 
 .skills-box{
     width: 20rem;
-    border: solid thin white;
+    /* border: solid thin white; */
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -172,6 +172,5 @@ body, html {
 
  .fa-arrow-circle-down{
      margin-top: 5px;
+     pointer-events: none;
  }
-
-
